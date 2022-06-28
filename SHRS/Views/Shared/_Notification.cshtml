@@ -1,0 +1,16 @@
+﻿@if(TempData["Success"] != null)
+{
+   <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script type="text/javascript">
+       toaster.success('@TempData["Success"]');
+   </script>
+}
+@if(TempData["error"] != null)
+{
+   <script src="~/lib/jquery/dist/jquery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script type="text/javascript">
+       toaster.error('@TempData["error"]');   
+   </script>
+}
